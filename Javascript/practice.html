@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript</title>
 </head>
 <body>
     <h1>Hello Javascript</h1>
 <script>
-/*    
+  
 function myVar(noun, verb, adverb, pronoun){
     var result = " ";
     result = "The " + noun + verb + adverb + " to the river " + pronoun;
@@ -18,35 +18,35 @@ function myVar(noun, verb, adverb, pronoun){
 }
 
 console.log(myVar("teacher", " went", " down", "running"));
-*/
 
-/*
+
+
 var myArray = [["Alexis", 2],"[Adrian", 4];
 myArray.shift();
 myArray.unshift("Christine",5)
 
 console.log(myArray);
-*/
 
-/*
+
+
 function myWorld(){
     console.log('hello world')
 
 }
 myWorld();
-*/
+
 
 //passing functions
-/*
+
 function passFunctions (x, y) {
     console.log (x - y)
 }
 
 passFunctions(10, 5);
-*/
+
 
 //global scope and functions -visisbility of variables and global can be seen everywhere
-/*
+
 var myGlobal = 10;
 
 function func1() {
@@ -65,14 +65,14 @@ function func2(){
 } 
 func1();
 func2();
-*/
+
 //local scope - using the variable inside the function and trying to print it twice while you have called it outside the function.
 //local vs global variable
-/*var outwear = "Trouser";
+var outwear = "Trouser";
 function dress(){
     return outwear;
 }
-console.log(dress());*/
+console.log(dress());
 var sum = 2;
 
 function addFive() {
@@ -82,6 +82,33 @@ function addFive() {
 var result = addFive(); // Call the function and store the result in 'result'
 console.log(result);    // Log the result
 
+
+//processing
+var processed = 0;
+
+function processArg(num){
+    return (num + 3);
+}
+ processed = processArg(5);
+ console.log (processed);
+//stand line - a cue is the abstract data structure new items can be added back of the cue and old items are taken off from the front of the cue
+//Boolean - returns true or false
+function myVar(){
+    return true;
+}
+myVar();
+
+//if statements
+function trueOrFalse(isItTrue) {
+    if (isItTrue) {
+        return "yes it is";
+
+    }
+    return "no, it's false"
+}
+
+console.log(trueOrFalse(true));//output: yes it is...
+console.log(trueOrFalse()); // output: no it's false
 
 
 </script>
