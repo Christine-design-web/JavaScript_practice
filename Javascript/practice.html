@@ -217,8 +217,49 @@ function caseInSwitch(val){
 console.log(caseInSwitch(7));
 
 //multiple input giving the same output
+function weekDays(holiday){
+    var answer = " ";
+    switch(holiday){
+        case 1:
+        case 2:
+        case 3:
+            answer = "weekday";
+            break;
+        case 3:
+        case 4:
+        case 5:
+            answer = "it is almost there";
+            break;
+        case 6:
+        case 7:
+            answer = "weekend is here";
+            break;
+            default:
+                answer = "oops we are sorry";
+                break;   
+    }
+    return answer;
+}
+console.log(weekDays(2));
 
+//returning boolean
+function isLess(a, b){
+    return a > b;
+}
+console.log(isLess(5,4));
 
+//counting cards
+//object they use indexes 
+//propert is anything before the colonObject.
+var testObject = {
+    "hat": "ballcap",
+    "shirt": "Jersey",
+    "shoes": "cleats"
+};
+delete testObject.shoes;
+
+console.log(testObject);
+ 
 
 
 </script>
