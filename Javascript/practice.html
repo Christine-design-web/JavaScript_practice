@@ -272,7 +272,34 @@ const person = {
 };
 
 console.log("Hello my name is " + " " + person.firstName + " " + person.lastName + " I  am " + " "+ person.age + " years old");
- 
+ //javascript properties
+ //eg obejctNmae.property(person.age), objectName["propert"](person["age"]), obejectName[expression] (x = "age; person[x]")
+// you can add an object or delete by using (eg delete person.age)
+//Nested object
+/*myObj = {
+  name:"John",
+  age:30,
+  cars: {
+    car1:"Ford",
+    car2:"BMW",
+    car3:"Fiat"
+  }
+}
+console.log(myObj.cars["car2"]);
+*/
+
+//Values in objects can be arrays, and values in arrays can be objects:
+let myObj = { name: "Chris", age: 38 };
+myObj;
+let myString = JSON.stringify(myObj);
+myString;
+
+console.log(myObj); // This will log the myObj object to the console
+console.log(myString); // This will log the JSON string to the console
+
+
+
+
 
 
 </script>
