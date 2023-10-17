@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
+    <title>Theme Changer</title>
+    <style> 
+    /*color change*/
+ #themecolor{
+    height: 100px;
+    width: 700px;
+    background-color: repeating-radial-gradient(blue, red 10%, green 15%);
+}
+
+    </style>
+</head>
+<body>
+    <button id="changeThemeButton">Change Theme</button>
+    <div id="contentContainer" class="theme-light">
+        <p>This is some content.</p>
+    </div>
+
+    <div id="themecolor"></div>
+    <script src="theme.js"></script>
+</body>
+</html>

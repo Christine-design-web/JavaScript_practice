@@ -1,0 +1,20 @@
+/* Default theme styles */
+.theme-light {
+    color: black;
+    background-color: white;
+}
+
+/* Dark theme styles */
+.theme-dark {
+    color: white;
+    background-color: black;
+}
+p{
+    color: blue;
+}
+ /*color change*/
+ #themecolor{
+    height: 100px;
+    width: 700px;
+    background-color: repeating-radial-gradient(blue, red 10%, green 15%);
+}
