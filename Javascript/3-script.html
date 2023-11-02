@@ -58,22 +58,42 @@
   //product
   var i;
   var product = 1
-  var num = parseInt(prompt("Enter number", "Enter.."))
+  var num = parseInt(prompt("Enter product number", "Enter"))
   for (i =1; i <= num; i++){
     product = product * i;
   }
   document.write("Factorial:" + product);
+  document.write("<br/>");
 
   
 
   //while loop
-var num = parseInt(prompt("Enter number", "Enter"));
+/*var num = parseInt(prompt("Enter number", "Enter"));
 var count = 0;
 while(num > 0){
   num = Math.trunc(num / 10);
   count++;
 }
 document.write("<br/>" + "Number of digits:" + count);
+*/
+
+// printing the pin using the do___while loop
+
+var actualpin = "2003";
+var pin;
+var count = 0;
+do {
+  pin = prompt("Enter the pin", "Enter");
+  count++;
+} while (pin != actualpin && count < 3);
+if (pin == actualpin){
+  document.write( "<br/>" + "Correct pin");
+ 
+}
+else{
+  document.write( "<br/>" + "Sorry, you have exceeded the number of tries");
+  
+}
 
 
     </script>
